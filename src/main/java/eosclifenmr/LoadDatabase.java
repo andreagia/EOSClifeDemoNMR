@@ -21,7 +21,7 @@ class LoadDatabase {
 		csv2.add("");
 		return args -> {
 			log.info("Preloading " + repository.save(new NmrData("CHEMBL191334","Q00987",csv1)));
-			log.info("Preloading " + repository.save(new NmrData("Frodo Baggins", "thief",csv2)));
+			//log.info("Preloading " + repository.save(new NmrData("Frodo Baggins", "thief",csv2)));
 		};
 	}
 }
