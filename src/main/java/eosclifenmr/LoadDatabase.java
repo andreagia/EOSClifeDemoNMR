@@ -18,9 +18,10 @@ class LoadDatabase {
 		List<String> csv1 = new ArrayList<>();
 		List<String> csv2 = new ArrayList<>();
 		csv1.add(" ");
+		csv2.add("");
 		return args -> {
 			log.info("Preloading " + repository.save(new NmrData("CHEMBL191334","Q00987",csv1)));
-			log.info("Preloading " + repository.save(new NmrData("Frodo Baggins", "thief")));
+			log.info("Preloading " + repository.save(new NmrData("Frodo Baggins", "thief",csv2)));
 		};
 	}
 }

@@ -13,10 +13,10 @@ public class NmrData {
     @GeneratedValue
     Long id;
     // chembl id
-    private String idLigand;
+    private String idligand;
 
     // PDBe id
-    private String idProtein;
+    private String idprotein;
 
    // private List<String>  csdifresidues;
     @ElementCollection
@@ -32,10 +32,10 @@ public class NmrData {
 
     NmrData() {}
 
-    NmrData(String idligand, String idProtein, List<String> csdifresidues,
+    NmrData(String idligand, String idprotein, List<String> csdifresidues,
             String kd, String ph, String ligconc, String protconc, String buffer, String ionicstr) {
-        this.idLigand = idligand;
-        this.idProtein = idProtein;
+        this.idligand = idligand;
+        this.idprotein = idprotein;
         this.csdifresidues =csdifresidues;
         this.kd = kd;
         this.ph = ph;
@@ -45,8 +45,8 @@ public class NmrData {
         this.ionicstr = ionicstr;
     }
     NmrData(String idligand, String idProtein, List<String> csdifresidues) {
-        this.idLigand = idligand;
-        this.idProtein = idProtein;
+        this.idligand = idligand;
+        this.idprotein = idProtein;
         this.csdifresidues =csdifresidues;
     }
 }
